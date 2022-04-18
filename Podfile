@@ -6,7 +6,7 @@ target 'ios-exam' do
   use_frameworks!
 
   pod 'Alamofire'
-  pod ''
+  pod 'Kingfisher'
 
   target 'ios-examTests' do
     inherit! :search_paths

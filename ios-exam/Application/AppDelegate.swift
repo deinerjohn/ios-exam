@@ -16,10 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let vc = ViewController()
-        
+        let vc = PersonListViewController()
+        let navigation = UINavigationController(rootViewController: vc)
+        navigation.navigationBar.prefersLargeTitles = true
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = UINavigationController(rootViewController: vc)
+        self.window?.rootViewController = navigation
         self.window?.makeKeyAndVisible()
         
         return true
